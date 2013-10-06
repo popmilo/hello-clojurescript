@@ -6,5 +6,5 @@
    [{:source-paths ["src/"]
      :compiler {:optimizations :none
                 :pretty-print false
-                :output-dir "out" 
+                :output-dir "out"
                 :output-to "out/main.js"}}]})
