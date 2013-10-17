@@ -1,5 +1,6 @@
 (ns app
-    (:require [app.world :as world]))
+    (:require [app.world :as world]
+              [goog.events :as goog-events]))
 
 ;(js/alert (world/default-string))
 
@@ -84,6 +85,11 @@
      (map draw-pixel tunnel-pixel-coords)
   )
 
-(drawtunel)
+(defn ^:export initialise []
+  (drawtunel))
 
 
+
+(js/alert (world/default-string))
+(initialise)
+(js/alert "Gotovo crtanje ?")
